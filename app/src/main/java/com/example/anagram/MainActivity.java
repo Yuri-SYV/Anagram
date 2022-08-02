@@ -11,9 +11,9 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView editText;
-    TextView outText;
-    Button button;
+    private TextView editText;
+    private TextView outText;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,25 +25,34 @@ public class MainActivity extends AppCompatActivity {
         button = (Button) findViewById(R.id.button);
 
         OnClickListener oclButton = new OnClickListener() {
+
             @Override
             public void onClick(View view) {
+                editString();
+            }
 
+
+            public void editString() {
                 String string = editText.getText().toString();
                 String[] strArray = string.split(" ");
-
                 StringBuilder builder = new StringBuilder();
 
                 for (int i = 0; i < strArray.length; i++) {
+
                     char[] str1 = strArray[i].toCharArray();
                     for (int j = str1.length - 1; j >= 0; j--) {
-                        builder.append(str1[j]);
+                        if (str1[j] == 1) {
+                            break;
+                        } else {
+                            builder.append(str1[j]);
 
-                        outText.setText(builder.toString());
+                        }
                     }
+                    builder.append(" ");
                 }
+                outText.setText(builder.toString());
             }
         };
-
         button.setOnClickListener(oclButton);
     }
 }
