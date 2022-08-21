@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView editText;
     private TextView outText;
+    private TextView ignoredCharacters;
     private Button button;
 
     @Override
@@ -23,48 +24,64 @@ public class MainActivity extends AppCompatActivity {
         editText = (TextView) findViewById(R.id.editText);
         outText = (TextView) findViewById(R.id.outText);
         button = (Button) findViewById(R.id.button);
+        ignoredCharacters = (TextView) findViewById(R.id.ignoredCharacters);
 
         OnClickListener oclButton = new OnClickListener() {
-
             @Override
             public void onClick(View view) {
-                editString();
+               editString();
             }
 
             public void editString() {
                 String string = editText.getText().toString();
                 String[] strArray = string.split(" ");
+
                 StringBuilder builder = new StringBuilder();
 
-
                 for (int n = 0; n < strArray.length; n++) {
+                    char[] s = strArray[n].toCharArray();
 
-                    char[] str1 = strArray[n].toCharArray();
+                    reverse(s);
 
-
-                    char[] str2 = new char[str1.length];
-
-                    for (int i = 0; i < str1.length; i++) {
-
-                        for (int j = str1.length - i - 1; j >= 0; j--) {
-                            if (str1[i] == '0' || str1[i] == '1' || str1[i] == '2' || str1[i] == '3' || str1[i] == '4' || str1[i] == '5' || str1[i] == '6' || str1[i] == '7' || str1[i] == '8' || str1[i] == '9') {
-
-                                str2[i] = str1[i];
-
-                            } else {
-
-                                str2[j] = str1[i];
-                            }
-                            i++;
-                        }
-                        builder.append(str2);
-                        builder.append(" ");
-
-                    }
+                    String revStr = new String(s);
+                    builder.append(revStr);
+                    builder.append(" ");
                     outText.setText(builder.toString());
                 }
             }
+
+                public void reverse(char[] s) {
+                    String ignore = ignoredCharacters.getText().toString();
+                    char[] temp = new char[s.length];           // creating character array
+                    int x = 0;
+                    for (int i = 0; i < s.length; i++) {
+                        if (ignore.indexOf(s[i]) < 0) {
+                            temp[x] = s[i];
+                            x++;
+                        }
+                    }
+
+                    rev(temp, 0, x);                          // reversing the character array
+
+                    x = 0;
+                    for (int i = 0; i < s.length; i++) {        // updating the original string
+                        if (ignore.indexOf(s[i]) < 0) {
+                            s[i] = temp[x];
+                            x++;
+                        }
+                    }
+                }
+
+                public void rev(char s[], int l, int r){        // reversal array
+                    for (int i = l; i < r / 2; i++) {
+                        char temp = s[i];
+                        s[i] = s[r - 1 - i];
+                        s[r - 1 - i] = temp;
+                    }
+                }
+
         };
         button.setOnClickListener(oclButton);
     }
 }
+

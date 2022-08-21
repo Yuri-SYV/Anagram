@@ -1219,6 +1219,7 @@ int color cardview_light_background 0x7f05002b
 int color cardview_shadow_end_color 0x7f05002c
 int color cardview_shadow_start_color 0x7f05002d
 int color checkbox_themeable_attribute_color 0x7f05002e
+int color colorPrimary 0x7f05025a
 int color design_bottom_navigation_shadow_color 0x7f05002f
 int color design_box_stroke_color 0x7f050030
 int color design_dark_default_color_background 0x7f050031
@@ -2738,6 +2739,7 @@ int id icon_group 0x7f0800de
 int id ifRoom 0x7f0800df
 int id ignore 0x7f0800e0
 int id ignoreRequest 0x7f0800e1
+int id ignoredCharacters 0x7f0801eb
 int id image 0x7f0800e2
 int id immediateStop 0x7f0800e3
 int id included 0x7f0800e4
@@ -3193,6 +3195,8 @@ int mipmap ic_launcher_round 0x7f0d0001
 int plurals mtrl_badge_content_description 0x7f0e0000
 int string Button 0x7f0f0000
 int string Edit_text 0x7f0f0001
+int string Enter_text 0x7f0f007e
+int string Ignored_characters 0x7f0f007d
 int string abc_action_bar_home_description 0x7f0f0002
 int string abc_action_bar_up_description 0x7f0f0003
 int string abc_action_menu_overflow_description 0x7f0f0004
@@ -3230,6 +3234,7 @@ int string character_counter_overflowed_content_description 0x7f0f0023
 int string character_counter_pattern 0x7f0f0024
 int string chip_text 0x7f0f0025
 int string clear_text_end_icon_content_description 0x7f0f0026
+int string enter_ignored_characters 0x7f0f007f
 int string error_icon_content_description 0x7f0f0027
 int string exposed_dropdown_menu_content_description 0x7f0f0028
 int string fab_transformation_scrim_behavior 0x7f0f0029

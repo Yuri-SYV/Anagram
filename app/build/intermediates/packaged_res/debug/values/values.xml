@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="colorPrimary">#FFFFFFFF</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -9,7 +10,10 @@
     <color name="white">#FFFFFFFF</color>
     <string name="Button">CONVERT</string>
     <string name="Edit_text"/>
+    <string name="Enter_text">Enter text</string>
+    <string name="Ignored_characters"/>
     <string name="app_name">Anagram</string>
+    <string name="enter_ignored_characters">Enter Ignored Characters</string>
     <style name="Theme.Anagram" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

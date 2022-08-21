@@ -2,5 +2,8 @@
     <string name="app_name">Anagram</string>
     <string name="Button">CONVERT</string>
     <string name="Edit_text"></string>
+    <string name="Ignored_characters"></string>
+    <string name="Enter_text">Enter text</string>
+    <string name="enter_ignored_characters">Enter Ignored Characters</string>
 
 </resources>
