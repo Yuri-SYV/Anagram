@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import utils.EditString;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView editText;
@@ -32,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 String string = editText.getText().toString();
                 String ignore = ignoredCharacters.getText().toString();
 
-                EditString edstr = new EditString();
-
-                outText.setText(edstr.editString(string, ignore));
+                outText.setText(EditString.editString(string, ignore));
             }
         };
         button.setOnClickListener(oclButton);

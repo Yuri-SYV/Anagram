@@ -1,8 +1,8 @@
-package com.example.anagram;
+package utils;
 
 public class EditString {
 
-    public String editString(String string, String ignore) {
+    public final static String editString(String string, String ignore) {
 
             StringBuilder builder = new StringBuilder();
             String[] strArray = string.split(" ");
@@ -17,7 +17,7 @@ public class EditString {
             return result;
         }
 
-        public char[] reverse(char[] s, String ignore) {
+        public static char[] reverse(char[] s, String ignore) {
 
             char[] temp = new char[s.length];           // creating character array
             int x = 0;
@@ -43,7 +43,7 @@ public class EditString {
             return anagram;
         }
 
-        public void rev(char s[], int l, int r) {        // reversal array
+        public final static void rev(char s[], int l, int r) {        // reversal array
             for (int i = l; i < r / 2; i++) {
                 char temp = s[i];
                 s[i] = s[r - 1 - i];

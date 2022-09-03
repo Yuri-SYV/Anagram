@@ -7,9 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram.app.androidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram.app.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Anagram.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Anagram.app.unitTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Anagram.lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Anagram.lib.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Anagram.lib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Anagram.lib.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/Anagram.lib.test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/Anagram.lib.test.iml" />
     </modules>
   </component>
 </project>
