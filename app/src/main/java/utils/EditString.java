@@ -11,7 +11,9 @@ public class EditString {
                 char[] s = strArray[n].toCharArray();
                 String revStr = new String(reverse(s, ignore));
                 builder.append(revStr);
-                builder.append(" ");
+                if (n < strArray.length - 1) {
+                    builder.append(" ");
+                }
             }
             String result = builder.toString();
             return result;
