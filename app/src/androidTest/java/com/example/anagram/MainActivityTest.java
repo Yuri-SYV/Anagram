@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
 
 public class MainActivityTest {
 
-    @Rule public ActivityScenarioRule<MainActivity> activityTestRule =
+    @Rule public ActivityScenarioRule activityTestRule =
             new ActivityScenarioRule(MainActivity.class);
 
     @Test
@@ -39,6 +39,62 @@ public class MainActivityTest {
         // check that outText contains error text
         onView(withId(R.id.outText))
                 .check(matches(withText("dednimxoF looc 24/7")));
+    }
 
+    @Test
+    public void checkClickVoid() {
+      //"" in EditText
+      onView(withId(R.id.editText))
+              .perform(typeText(""));
+
+      // "" in ignoredCharacters
+      onView(withId(R.id.ignoredCharacters))
+              .perform(typeText(""), closeSoftKeyboard());
+
+      // press button
+      onView(withId(R.id.button))
+              .perform(click());
+
+      // check that outText contains error text
+      onView(withId(R.id.outText))
+              .check(matches(withText("")));
+    }
+
+    @Test
+    public void checkClickNoSymvol () {
+      // "a1bcd efg!h" in EditText
+      onView(withId(R.id.editText))
+              .perform(typeText("a1bcd efg!h"));
+
+      // "" in ignoredCharacters
+      onView(withId(R.id.ignoredCharacters))
+              .perform(typeText(""), closeSoftKeyboard());
+
+      // press button
+      onView(withId(R.id.button))
+              .perform(click());
+
+      // check that outText contains error text
+      onView(withId(R.id.outText))
+              .check(matches(withText("dcb1a h!gfe")));
+    }
+
+    @Test
+    public void checkClickNoText() {
+        // notext in EditText
+        onView(withId(R.id.editText))
+                .perform(typeText(""));
+
+        // ignoredCharacters
+        onView(withId(R.id.ignoredCharacters))
+                .perform(typeText("asd0123456789/"), closeSoftKeyboard());
+
+        // press button
+        onView(withId(R.id.button))
+                .perform(click());
+
+        // check that outText contains error text
+        onView(withId(R.id.outText))
+                .check(matches(withText("")));
     }
 }
