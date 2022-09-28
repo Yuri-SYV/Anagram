@@ -8,12 +8,12 @@
         "source": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-main-7:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
         "merged": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-merged_res-5:\\drawable-v24_ic_launcher_foreground.xml.flat",
         "source": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-main-7:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-merged_res-5:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-main-7:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
         "merged": "C:\\Users\\Yura\\.gradle\\daemon\\7.3.3\\com.example.anagram.app-merged_res-5:\\layout_activity_main.xml.flat",

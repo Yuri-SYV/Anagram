@@ -13,6 +13,7 @@ drawable ic_launcher_foreground
 id button
 id editText
 id ignoredCharacters
+id main
 id outText
 layout activity_main
 mipmap ic_launcher
