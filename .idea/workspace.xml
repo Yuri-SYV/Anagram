@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0816c603-465e-4c8d-ad21-62b43c3360ff" name="Changes" comment="Anagram + JUnit + Espresso test full">
+    <list default="true" id="0816c603-465e-4c8d-ad21-62b43c3360ff" name="Changes" comment="Anagram + JUnit + Espresso test full ver1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/anagram/MainActivityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/anagram/MainActivityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -564,7 +561,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664210921589</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Anagram + JUnit + Espresso test full ver1">
+      <created>1664352826610</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1664352826610</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -646,7 +650,8 @@
     <MESSAGE value="1 working version + JUnit test" />
     <MESSAGE value="Anagram + JUnit + Espresso test" />
     <MESSAGE value="Anagram + JUnit + Espresso test full" />
-    <option name="LAST_COMMIT_MESSAGE" value="Anagram + JUnit + Espresso test full" />
+    <MESSAGE value="Anagram + JUnit + Espresso test full ver1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Anagram + JUnit + Espresso test full ver1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
