@@ -89,7 +89,8 @@ public class MainActivityTest {
     public void checkClickNoSymvol () {
       // "a1bcd efg!h" in EditText
       onView(withId(R.id.editText))
-              .perform(typeText("a1bcd efg!h"));
+              .perform(typeText("a1bcd efg!h"))
+              .check(matches(withText("a1bcd efg!h")));
 
       // "" in ignoredCharacters
       onView(withId(R.id.ignoredCharacters))
@@ -108,7 +109,8 @@ public class MainActivityTest {
     public void checkClickNoText() {
         // notext in EditText
         onView(withId(R.id.editText))
-                .perform(typeText(""));
+                .perform(typeText(""))
+                .check(matches(withText("")));
 
         // ignoredCharacters
         onView(withId(R.id.ignoredCharacters))
